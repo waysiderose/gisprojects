@@ -1,4 +1,4 @@
-# gisprojects
+# GIS Porfolio
 
 90753-A4 - Advanced Geographic Information Systems
 
