@@ -8,7 +8,28 @@
     <link rel="stylesheet" href="style.css">
     <title>Sonia Reed - GIS Portfolio</title>
     <style>
-     [
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        // Styles a map in custom mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.4583498, lng: -80.079528},  // Setting the center to Pittsburgh, change as you like
+          zoom: 15,  // Setting a zoom scale for Pittsburgh
+          styles:    [
   {
     "elementType": "geometry",
     "stylers": [
@@ -239,23 +260,10 @@
       }
     ]
   }
-]
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        // Styles a map in custom mode.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 40.4583498, lng: -80.079528},  // Setting the center to Pittsburgh, change as you like
-          zoom: 15,  // Setting a zoom scale for Pittsburgh
-          styles:    // Add JSON from Map Style Wizard below this line... 
-
-// ..and here's the end of JSON from Style Wizard          
+]         
         });
       }
-// Don't forget your API Key below vv
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBwQZuoLvHQvP8mKXhcG-jjbiW-NYLvyk0&center=37.20542023064709,-95.91051889311667&zoom=6&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x026873&style=element:labels%7Ccolor:0x131311&style=element:labels.text.fill%7Ccolor:0x523735&style=element:labels.text.stroke%7Ccolor:0xffffff&style=feature:administrative%7Celement:geometry%7Ccolor:0x591830&style=feature:administrative.land_parcel%7Celement:geometry.stroke%7Ccolor:0x04b2d9&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0x260911&style=feature:landscape%7Celement:geometry%7Ccolor:0x026e73&style=feature:landscape.natural%7Celement:geometry%7Ccolor:0x03738c&style=feature:poi%7Celement:geometry%7Ccolor:0x8c264b&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x260911&style=feature:poi.park%7Celement:geometry%7Ccolor:0x8c264b&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x260911&style=feature:road%7Celement:geometry%7Ccolor:0xf2f2f2&style=feature:road.arterial%7Celement:geometry%7Ccolor:0xf2f2f2&style=feature:road.highway%7Celement:geometry%7Ccolor:0xf2911b&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0x8c6111&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0xf2911b&style=feature:road.highway.controlled_access%7Celement:geometry.stroke%7Ccolor:0x8c6111&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x59360a&style=feature:transit.line%7Celement:geometry%7Ccolor:0xbf3056&style=feature:transit.line%7Celement:labels.text.fill%7Ccolor:0x591830&style=feature:transit.line%7Celement:labels.text.stroke%7Ccolor:0xf2f2f2&style=feature:transit.station%7Celement:geometry%7Ccolor:0x8c264b&style=feature:water%7Celement:geometry.fill%7Ccolor:0xbf3056&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x92998d&size=480x360 "
     async defer></script>
