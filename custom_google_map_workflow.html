@@ -6,7 +6,7 @@
     * {
       font-family: sans-serif;
       background-color: #101214;
-      color: #7A7C80;}
+      color: ##DADEE6;}
 
       h1{
         color: white;}
@@ -40,17 +40,17 @@
        
           <p class="tab">To get a reference image, I took a screen shot of the main page of Global Links.</p>
           <p></p>
-          <p><img src="/gisprojects/gmap/GlobalLinksImpage.PNG" width="900"/></p>
+          <p class="tab"><img src="/gisprojects/gmap/GlobalLinksImpage.PNG" width="900"/></p>
           <p></p>
           <br/>
           <p class="tab">Then, I ran the screenshot through <a href="https://color.adobe.com/create/image">Adobe Color Create</a>. Color Create pulls colors from a source and give Hex codes as output. I used the "Extract Theme" option, which produces multiple sets of five colors from an image source based on a "theme". For example, there are "colorful", "deep", and "dark" options, which change the color output. I tested chose multiple colors from different themes that worked together in order to create a reference table.</p>
           <p></p>
-          <p><img src="/gisprojects/gmap/ColorPallet.PNG" width="900" /></p>
+          <p class="tab"><img src="/gisprojects/gmap/ColorPallet.PNG" width="900" /></p>
           <p></p>
           <br/>
-          <p class="tab">Created a color pallet reference table with a Column for the Hex Code, Color Name, Sample Image, and RBG Distribution.</p>
+          <p class="tab">Created a color pallet reference table with a Column for the Hex Code, Color Name, Sample Image, and RBG Distribution. The below reference table was used as a code pallet for which hex codes to use to assign colors in the map style editor.</p>
           <p></p>
-          <p></p>
+          <br/>
           <p></p>
           <h3>Abbreviated Color Pallet Example</h3>
           <table style="border-collapse:collapse;border:none;">
@@ -147,18 +147,16 @@
     </tbody>
 </table>
 
-          <p></p>
-          <br/>
-          <p class="tab">Used the reference table as a sampling to assign colors to the unique base map.</p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+         <br/>
+         <br/>
+         <br/>
+            
+            
           <h2>Step 3: Create basemap with color pallet.</h2>
 
           <p class="tab">I used the <a href="https://mapstyle.withgoogle.com/">Google Sytling Wizard</a> to create a custom basemap with colors pulled from my reference pallet table.</p>
           <p></p>
-          <p><img src="/gisprojects/gmap/ImageofMap.PNG" /> </p>
+          <p class="tab"><img src="/gisprojects/gmap/ImageofMap.PNG" /> </p>
           <p></p>
           <br/>
           <p class="tab">I also created a table that documented the colors changed for each section.</p>
@@ -433,5 +431,14 @@
         </tr>
     </tbody>
 </table>
+            <br/>
+            <br/>
+            <h2>Step 4: Explort and share the map.</h2>
+            <p></p>
+            <p class="tab">I exported the JSON file containing the map color coding and saved the Google Map APIs link.</p>
+            <p></p>
+            <p class="tab">Want to see a bigger version of the map? Check out <a href="/gisprojects/google_map_example.html">the example map page!</a>*</p>
+            <p></p>
+            <p class="tab">*(I am still wrestling with JSON/API issues, so it might not show up as of 12pm 3/28/2021)</p>
 </body>
 </html>
