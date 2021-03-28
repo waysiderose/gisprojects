@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Sonia Reed - GIS Portfolio</title>
+</head>
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+          <h1>Step 1: Choose an organization.</h1>
+        </div>
+        <div class="section-2">
+          <p>This exercise operates under customizing a basemap to the colors of an organization. Previously, we had used ArcGIS Esri software to do this. However, what if our client does not have a license?</p>
+          <p></p>
+          <p>I chose the non-profit <a href ="https://www.globallinks.org/">Global Links</a>. They do good work that has local and far reaching impact - for example, they are a primary mask supplier in a volunteer effort I volunteer with.</p>
+          <p></p>
+          </div>
+    </div>
+      <div class="grid-2">
+        <div class="section-1">
+          <h1>Step 2: Create a color pallet.</h1>
+        </div>
+        <div class="section-2">
+          <p>I took a screen shot of the main page of Global Links.</p>
+          <p></p>
+          <p><img src="/gisprojects/gmap/GlobalLinksImpage.PNG"/></p>
+          <p></p>
+          <p>Ran the screenshot through <a href="https://color.adobe.com/create/image">Adobe Color Create's Extract Theme</a>. Tested different themes to get a unique selection of colors that worked together for my reference table.</p>
+          <p></p>
+          <p><img src="/gisprojects/gmap/ColorPallet.PNG"/></p>
+          <p></p>
+          <p>Created a color pallet reference table with a Column for the Hex Code, Color Name, Sample Image, and RBG Distribution.</p>
+          <p></p>
+          <table style="border-collapse:collapse;border:none;">
+    <tbody>
+        <tr>
+            <td style="width: 85.25pt;border: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Hex Code</span></p>
+            </td>
+            <td style="width: 125.85pt;border-color: windowtext windowtext windowtext currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Color Name</span></p>
+            </td>
+            <td style="width: 149.9pt;border-color: windowtext windowtext windowtext currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Color</span></p>
+            </td>
+            <td style="width: 106.5pt;border-color: windowtext windowtext windowtext currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">RBG Color Code</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="width: 85.25pt;border-color: currentcolor windowtext windowtext;border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;height: 21pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">#8C264B</span></p>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">&nbsp;</span></p>
+            </td>
+            <td rowspan="3" style="width: 125.85pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 21pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Stiletto</span></p>
+            </td>
+            <td rowspan="3" style="width: 149.9pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 21pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAABTCAIAAAA+31NZAAAAAXNSR0IArs4c6QAAAUdJREFUeF7t3cEJgEAQxVDXjmzG1qx07+JFsQIDvqkgJPzzjDnn4jIG1gwJkMvAuPdxbDslnxuwj88TvAD00KNloEVjH3q0DLRo7EOPloEWjX3o0TLQorEPPVoGWjT2oUfLQIvGPvRoGWjR2IceLQMtGvvQo2WgRWMferQMtGjsQ4+WgRaNfejRMtCisQ89WgZaNPahR8tAi8Y+9GgZaNHYhx4tAy0a+9CjZaBFYx96tAy0aOxDj5aBFo196NEy0KKxDz1aBlo09qFHy0CLxj70aBlo0diHHi0DLRr70KNloEVjH3q0DLRo7EOPloEWjX3o0TLQorEPPVoGWjT2oUfLQIvGPvRoGWjR2IceLQMtGvvQo2WgRWMferQMtGjsQ4+WgRaNfejRMtCisY9Wj+dfaovrrzT20Sqvhx4tAy0a+9CjZaBFcwInOwpfvewtMgAAAABJRU5ErkJggg==" alt="image" width="133"></span></p>
+            </td>
+            <td style="width: 106.5pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 21pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">140</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 106.5pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 21pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">38</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 106.5pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 21pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">75</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="width: 85.25pt;border-color: currentcolor windowtext windowtext;border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;height: 16.5pt;vertical-align: top;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>#04B2D9</span></pre>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">&nbsp;</span></p>
+            </td>
+            <td rowspan="3" style="width: 125.85pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 16.5pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Cerulean</span></p>
+            </td>
+            <td rowspan="3" style="width: 149.9pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 16.5pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAABCCAIAAAD/viIdAAAAAXNSR0IArs4c6QAAAPZJREFUeF7t00ENACAQxEAg+BeDG9wQVPQzGLimZec+d3ipgZVed/wb0KD/Bxpo0BvoCexAg95AT2AHGvQGegI70KA30BPYgQa9gZ7ADjToDfQEdqBBb6AnsAMNegM9gR1o0BvoCexAg95AT2AHGvQGegI70KA30BPYgQa9gZ7ADjToDfQEdqBBb6AnsAMNegM9gR1o0BvoCexAg95AT2AHGvQGegI70KA30BPYgQa9gZ7ADjToDfQEdqBBb6AnsAMNegM9gR1o0BvoCexAg95AT2AHGvQGegI70KA30BPYgQa9gZ7ADjToDfQEdqBBb6AnsIO+wQMdRwITKxxYsQAAAABJRU5ErkJggg==" alt="image" width="129"></span></p>
+            </td>
+            <td style="width: 106.5pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 16.5pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">4</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 106.5pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 16.5pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">178</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 106.5pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 16.5pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">217</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="width: 85.25pt;border-color: currentcolor windowtext windowtext;border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;height: 0.25in;vertical-align: top;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>#03738C</span></pre>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">&nbsp;</span></p>
+            </td>
+            <td rowspan="3" style="width: 125.85pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 0.25in;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Blue Lagoon</span></p>
+            </td>
+            <td rowspan="3" style="width: 149.9pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 0.25in;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABICAIAAACx52pFAAAAAXNSR0IArs4c6QAAAQNJREFUeF7t01kNACAQxUAOydhANEFFf2YNNGn3zX3ucJ2B1aGRvwEB4j8QQIDYQIy3AAFiAzHeAgSIDcR4CxAgNhDjLUCA2ECMtwABYgMx3gIEiA3EeAsQIDYQ4y1AgNhAjLcAAWIDMd4CBIgNxHgLECA2EOMtQIDYQIy3AAFiAzHeAgSIDcR4CxAgNhDjLUCA2ECMtwABYgMx3gIEiA3EeAsQIDYQ4y1AgNhAjLcAAWIDMd4CBIgNxHgLECA2EOMtQIDYQIy3AAFiAzHeAgSIDcR4CxAgNhDjLUCA2ECMtwABYgMx3gIEiA3EeAsQIDYQ4y1AgNhAjLcAAWIDMd4C4gAPBr8Bkvi47jwAAAAASUVORK5CYII=" alt="image" width="128"></span></p>
+            </td>
+            <td style="width: 106.5pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 0.25in;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">3</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 106.5pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 0.25in;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">115</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 106.5pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;height: 0.25in;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">140</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+          <p></p>
+          <p>Used the reference table as a sampling to assign colors to the unique base map.</p>
+          </div>
+    </div>
+  </div>
+      <div class="grid-2">
+        <div class="section-1">
+          <h1>Step 3: Create basemap with color pallet.</h1>
+        </div>
+        <div class="section-2">
+          <p>I used the <a href="https://mapstyle.withgoogle.com/">Google Sytling Wizard</a> to create a custom basemap with colors pulled from my reference pallet table.</p>
+          <p></p>
+          <p><img src="/gisprojects/gmap/ImageofMap.PNG" /> </p>
+          <p></p>
+          <p>I also created a table that documented the colors changed for each section.</p>
+          <p></p>
+          <table style="border-collapse:collapse;border:none;">
+    <tbody>
+        <tr>
+            <td style="width: 155.8pt;border: 1pt solid windowtext;padding: 0in 5.4pt;vertical-align: top;"><span style='font-size:16px;font-family:"Calibri",sans-serif;'><br>&nbsp;</span>&nbsp;<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Feature Type</span></p>
+            </td>
+            <td style="width: 155.85pt;border-color: windowtext windowtext windowtext currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Element Type</span></p>
+            </td>
+            <td style="width: 155.85pt;border-color: windowtext windowtext windowtext currentcolor;border-style: solid solid solid none;border-width: 1pt 1pt 1pt medium;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Styler</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 155.8pt;border-color: currentcolor windowtext windowtext;border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">All</span></p>
+            </td>
+            <td style="width: 155.85pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry&nbsp;</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Mosque (</span><span style='font-size:16px;font-family:  "Calibri",sans-serif;'>#026873)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 155.8pt;border-color: currentcolor windowtext windowtext;border-style: none solid solid;border-width: medium 1pt 1pt;border-image: none 100% / 1 / 0 stretch;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">All</span></p>
+            </td>
+            <td style="width: 155.85pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Labels</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Aubergine (</span><span style='font-size:16px;font-family:  "Calibri",sans-serif;'>#260911)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Landscape</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Mosque (</span><span style='font-size:16px;font-family:  "Calibri",sans-serif;'>#026873)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Administrative</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Wine Berry (</span><span style='font-size:16px;font-family:"Calibri",sans-serif;'>#591830)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Administrative/Land parcel</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Stroke</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Cerulean (</span><span style='font-size:16px;font-family:  "Calibri",sans-serif;'>#04B2D9)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Administrative/Land parcel</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Labels/Text fill</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Aubergine (</span><span style='font-size:16px;font-family:  "Calibri",sans-serif;'>#260911)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Landscape/Natural</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width: 155.85pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;vertical-align: top;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Blue Lagoon (</span><span style='font-size:16px;font-family:"Calibri",sans-serif;'>#03738C)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Points of Interest</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Stiletto (</span><span style="font-size:16px;">#8C264B)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Points of Interest</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Labels/Text Fill</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Aubergine (</span><span style='font-size:16px;font-family:  "Calibri",sans-serif;'>#260911)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Park</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Stiletto (</span><span style="font-size:16px;">#8C264B)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Park</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Labels/Text Fill</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Aubergine (</span><span style="font-size:16px;">#260911)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Road</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Concrete (</span><span style='font-size:16px;font-family:  "Calibri",sans-serif;'>#F2F2F2)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Road/Highway</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Carrot Orange (</span><span style="font-size:16px;">#F2911B)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Road/Highway</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Stroke</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Korma (#8C6111)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Road/Highway/Controlled area</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Carrot Orange (</span><span style="font-size:16px;">#F2911B)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Road/Highway/Controlled area</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Stroke</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Korma (#8C6111)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Road/Artery</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Concrete (#F2F2F2)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Road/Local</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Text fill</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Cioccolato (</span><span style='font-size:16px;font-family:"Calibri",sans-serif;'>#59360A)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Transit/Line</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Brick Red (#BF3056)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Transit/Line</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Label/Text Fill</span></p>
+            </td>
+            <td style="width: 155.85pt;border-color: currentcolor windowtext windowtext currentcolor;border-style: none solid solid none;border-width: medium 1pt 1pt medium;padding: 0in 5.4pt;vertical-align: top;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Wine Berry (</span><span style='font-size:16px;font-family:"Calibri",sans-serif;'>#591830)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Transit/Line</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Label/Text Outline</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Concrete (#F2F2F2)</span></pre>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Transit/Station</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Stiletto (</span><span style="font-size:16px;">#8C264B)</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:155.8pt;border:solid windowtext 1.0pt;border-top:  none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Water</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-size:16px;">Geometry</span></p>
+            </td>
+            <td style="width:155.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;">
+                <pre style='margin:0in;margin-bottom:.0001pt;font-size:13px;font-family:"Courier New";'><span style='font-size:16px;font-family:"Calibri",sans-serif;'>Brick Red (#BF3056)</span></pre>
+            </td>
+        </tr>
+    </tbody>
+</table>
+          </div>
+    </div>
+</body>
+ <footer>
+  <p><a href="https://github.com/giotsere/minimalist-portfolio">Minimalist Website Frame - Giostsere</a></p>
+  <p></p>
+ </footer> 
+</html>
