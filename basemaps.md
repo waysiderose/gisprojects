@@ -13,6 +13,8 @@ Check it out: this map is interactive! Draw on the map to see more of the area; 
 
 # Basemaps Example 2
 
+<img src="Image_PrincessBrideBaseMap.PNG"/>
+
 This time on my own, I created a customized basemap using my favorite movie: The Princess Bride.</p>
 
 Self Imposed requirements for the basemap: must use colors from the main promotional poster; must be legible and clear.</p>
@@ -22,4 +24,4 @@ I pulled the Hex codes of the movie's promotional poster using Canva. Then, I us
 Compare the two images. Can you see where the color pallet was used for land, water, and labels?
 
 <img src="ColorPallet_PrincessBrideBaseMap.PNG"/>
-<img src="Image_PrincessBrideBaseMap.PNG"/>
+
