@@ -8,7 +8,7 @@ In this exercise, we center Mingo County, West Virginia as the destination and u
 
 ## Output
 ![ArcGIS Insights Output, showing a map of distributor origin and amount next to a table comparing pharmacy name to 2010 population and amount distributed](
-gisprojects/spdataviz/painpilldist.PNG)
+spdataviz/painpilldist.PNG)
 
 
 ### Data Set
