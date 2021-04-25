@@ -8,6 +8,16 @@ Email: sreed@andrew.cmu.edu
 
 ---
 
+# Projects
+
+- [Custom Basemap Examples](basemaps/basemaps.md)
+- [Workflow: Custom Basemap using Google Style Editor](gmap/custom_google_map_workflow.md)
+- [Workflow: Custom Basemap using MapBox](mapbox/custom_mapbox_style_workflow.md)
+- [Spatial Data Visualization](spdataviz/mingoco.md)
+- [Comparison: ArcGIS Pro versus ArcGIS Insights](comparison/ProvsInsights.md)
+
+---
+
 ## About Me
 Welcome to my Advanced GIS online portfolio. I'm a 2019 graduate of Carnegie Mellon's Heinz College of Public Policy and Management who currently works for the university's Software Engineering Institute.
 
@@ -32,11 +42,3 @@ I also have much to learn about science communication and data visualization. Wh
 - I have visited almost every continential US state. (I'm coming for you someday, Maine.)
 
 ---
-
-# Projects
-
-- [Custom Basemap Examples](basemaps/basemaps.md)
-- [Workflow: Custom Basemap using Google Style Editor](gmap/custom_google_map_workflow.md)
-- [Workflow: Custom Basemap using MapBox](mapbox/custom_mapbox_style_workflow.md)
-- [Spatial Data Visualization](spdataviz/mingoco.md)
-- [Comparison: ArcGIS Pro versus ArcGIS Insights](comparison/ProvsInsights.md)
