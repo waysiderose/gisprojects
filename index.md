@@ -35,6 +35,7 @@ I also have much to learn about science communication and data visualization. Wh
 
 # Projects
 
-- [Custom Basemaps](basemaps/basemaps.md)
-- [Google Maps Style Editor](gmap/custom_google_map_workflow.html)
+- [Custom Basemap Examples](basemaps/basemaps.md)
+- [Workflow: Custom Basemap using Google Style Editor](gmap/custom_google_map_workflow.md)
+- [Workflow: Custom Basemap using MapBox](mapbox/custom_mapbox_style.md)
 - [Spatial Data Visualization](spdataviz/mingoco.md)
