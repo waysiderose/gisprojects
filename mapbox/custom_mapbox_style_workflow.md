@@ -1,6 +1,6 @@
 # Custom Basemap using Mapbox
 
-Mapbox is a highly customizable GIS system that is used by <a href="https://www.mapbox.com/showcase">many companies</a> for customizable mapping and GIS.
+Mapbox is a highly customizable GIS system that is used by <a href="https://www.mapbox.com/showcase">many companies</a> for customizable mapping and integrated GIS services.
 
 Purpose: Create a customized basemap in Mapbox and import into ArcGIS Online.
 
