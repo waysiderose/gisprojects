@@ -22,19 +22,19 @@ Following the tutorial, I chose to customize the basemap using the color pallet 
 
 I saved the customized style and named it "Rudy Greyscale" based on the red-grey-black pallet. Then, I made the map style public.
 
-<img src="mapbox/Image_RudyGrayscaleUSA" />
+<img src="mapbox/Image_RudyGrayscaleUSA.png" />
 
 Colors shown are customized to display differently based on how the zoom scale.
 
-<img src="mapbox/Image_RudyGrayscaleSFO"/>
+<img src="mapbox/Image_RudyGrayscaleSFO.png"/>
 
 ## Step 5: Connect basemap Style to ArcGIS Online Map.
 
 Open ArcGIS Online Maps, create a new map, and add style data as a WMTS server. Customize the WMTS Endpoint information using the public style key, user name, and access key.
 
-<img src="mapbox/Image_RudyGrayscaleEsri" />
+<img src="mapbox/Image_RudyGrayscaleEsri.png" />
 
-**[This map is interactive! Find it here.](mapbox/interactive_rudygrayscale.html)
+**[This map is interactive! Find it here.]**(mapbox/interactive_rudygrayscale.html)
 
 
 ### Resource
