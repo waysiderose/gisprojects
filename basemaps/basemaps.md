@@ -28,7 +28,9 @@ Self Imposed requirements for the basemap: must use colors from the main promoti
 Process: I pulled the Hex codes of the movie's promotional poster using Canva. Then, I used the Hex codes to create a customized basemap in ArcGIS Developer.
 
 
+
 Compare the two images. Can you see where the color pallet was used for land, water, and labels?
 
 <img src="ColorPallet_PrincessBrideBaseMap.PNG"/>
 
+[Interactive version of the Princess Bride map can be found here on the Esri site.](https://carnegiemellon.maps.arcgis.com/home/webmap/viewer.html?webmap=3a1b2d9155484eefa88fd84dfb9af195&extent=-94.9219,-45.213,94.9219,45.213)
