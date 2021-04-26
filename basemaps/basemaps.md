@@ -13,7 +13,7 @@ Requirements for the basemap: Must use colors of the main sponsor, Karken Brewin
 
 Process: I created a customized basemap using ArcGIS Developer editor using the Hex color codes of the sponsor's style guide. Then, I added an additional layer in ArcGIS online of location markers for the neighborhood farmer's markets.
 
-[**An interactive version of the map is available!**](/interactive_visitpgh.html)
+An interactive version is available either [on my website](/interactive_visitpgh.html) or [at Esri](https://arcg.is/1jm5vz).
 
 ---
 
