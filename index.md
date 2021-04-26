@@ -10,10 +10,15 @@ Email: sreed@andrew.cmu.edu
 
 # Projects
 
+### Custom Style Basemaps
 - [Custom Basemap Examples](basemaps/basemaps.md)
 - [Workflow: Custom Basemap using Google Style Editor](gmap/custom_google_map_workflow.md)
 - [Workflow: Custom Basemap using MapBox](mapbox/custom_mapbox_style_workflow.md)
+
+### Data Analysis
 - [Spatial Data Visualization](spdataviz/mingoco.md)
+
+### Comparative Analysis
 - [Comparison: ArcGIS Pro versus ArcGIS Insights](comparison/ProvsInsights.md)
 
 ---
