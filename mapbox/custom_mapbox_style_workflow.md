@@ -8,7 +8,7 @@ Purpose: Create a customized basemap in Mapbox and import into ArcGIS Online.
 
 I chose a <a href="https://coolors.co/palettes/trending">trending color pallet</a> to use to create the basemap.
 
-<img src="/mapbox/ColorPallet_Mapbox.png" />
+<img src="https://waysiderose.github.io/gisprojects/mapbox/ColorPallet_Mapbox.png" />
 
 ## Step 2: Use MapBox Styles to customize basemap.
 
@@ -22,17 +22,17 @@ Following the tutorial, I chose to customize the basemap using the color pallet 
 
 I saved the customized style and named it "Rudy Greyscale" based on the red-grey-black pallet. Then, I made the map style public.
 
-<img src="/mapbox/Image_RudyGrayscaleUSA.PNG" />
+<img src="https://waysiderose.github.io/gisprojects/mapbox/Image_RudyGrayscaleUSA.PNG" />
 
 Colors shown are customized to display differently based on how the zoom scale.
 
-<img src="/mapbox/Image_RudyGrayscaleSFO.PNG"/>
+<img src="https://waysiderose.github.io/gisprojects/mapbox/Image_RudyGrayscaleSFO.PNG"/>
 
 ## Step 5: Connect basemap Style to ArcGIS Online Map.
 
 Open ArcGIS Online Maps, create a new map, and add style data as a WMTS server. Customize the WMTS Endpoint information using the public style key, user name, and access key.
 
-<img src="/mapbox/Image_RudyGrayscaleEsri.PNG" />
+<img src="https://waysiderose.github.io/gisprojects/mapbox/Image_RudyGrayscaleEsri.PNG" />
 
 **[This map is interactive! Find it here.](mapbox/interactive_rudygrayscale.html)**
 
