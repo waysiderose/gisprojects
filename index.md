@@ -23,7 +23,7 @@ Email: sreed@andrew.cmu.edu
 - [Comparison: ArcGIS Pro versus ArcGIS Insights](comparison/ProvsInsights.md)
 
 ### Final Project
-- [Final Project Overview](finalprject/fpsummary.md)
+- [Final Project Overview](finalproject/fpsummary.md)
 - [Project Management Details](finalproject/fp_projectmgmt.md)
 - [Workflow: Creating Random IP Address Dataset](finalproject/fp_ipworkflow.md)
 - [Final Deliverable: StoryMap](finalproject/fp_storymap.md)
