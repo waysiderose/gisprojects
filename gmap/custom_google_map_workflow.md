@@ -12,7 +12,7 @@ I chose the non-profit <a href ="https://www.globallinks.org/">Global Links</a>.
 
 To get a reference image, I took a screen shot of the main page of Global Links.
 
-<img src="/gmap/GlobalLinksImpage.PNG" width="900"/>
+<img src="https://waysiderose.github.io/gisprojects/gmap/GlobalLinksImpage.PNG" width="900"/>
 
 Created a color pallet reference table with a Column for the Hex Code, Color Name, Sample Image, and RBG Distribution. The below reference table was used as a code pallet for which hex codes to use to assign colors in the map style editor.
 
@@ -116,7 +116,7 @@ Created a color pallet reference table with a Column for the Hex Code, Color Nam
 
 I used the <a href="https://mapstyle.withgoogle.com/">Google Sytling Wizard</a> to create a custom basemap with colors pulled from my reference pallet table.
 
-<img src="/gmap/ImageofMap.PNG" />
+<img src="https://waysiderose.github.io/gisprojects/gmap/ImageofMap.PNG" />
 
 I also created a table that documented the colors changed for each section.
 
