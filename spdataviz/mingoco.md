@@ -7,7 +7,7 @@ For this assignment, we were using ArcGIS Insights to explore the directional re
 In this exercise, we center Mingo County, West Virginia as the destination and use Link Analysis to measure both the distributer location and how much they send. Where are the pills coming from and who sends the bulk of them? What is the consumption rate compared to area population?
 
 ## Output
-<img src="/spdataviz/painpilldist.PNG" />
+<img src="https://waysiderose.github.io/gisprojects/spdataviz/painpilldist.PNG" />
 
 
 ### Data Set
