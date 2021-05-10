@@ -34,7 +34,7 @@ Open ArcGIS Online Maps, create a new map, and add style data as a WMTS server. 
 
 <img src="https://waysiderose.github.io/gisprojects/mapbox/Image_RudyGrayscaleEsri.PNG" />
 
-**[This map is interactive! Find it here.](mapbox/interactive_rudygrayscale.html)**
+**[This map is interactive! Find it here.](https://waysiderose.github.io/gisprojects/mapbox/interactive_rudygrayscale.html)**
 
 
 ### Resource
