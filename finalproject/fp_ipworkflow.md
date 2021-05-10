@@ -39,5 +39,4 @@ I used the above data set to simulate coarse location information collected by Z
 
 This data was then visualized in a Dashboard using ArcGIS Insights.
 
-<img src"https://waysiderose.github.io/gisprojects/finalproject/ZoomDashboard.PNG" />
-|
+<img src="https://waysiderose.github.io/gisprojects/finalproject/ZoomDashboard.PNG" />
