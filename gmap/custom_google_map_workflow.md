@@ -393,5 +393,5 @@ I also created a table that documented the colors changed for each section.
 
 I exported the JSON file containing the map color coding and created a Google Map API. Then, I used the API and reference code to create an interactive webpage version of the map.
            
-<a href="/gmap/google_map_example.html">Check out the interactive version of my custom Map Style for Global Links on the map page!</a>
+<a href="https://waysiderose.github.io/gisprojects/gmap/google_map_example.html">Check out the interactive version of my custom Map Style for Global Links on the map page!</a>
             
