@@ -17,7 +17,7 @@ Email: sreed@andrew.cmu.edu
 
 ### Data Analysis
 - [Spatial Data Visualization](spdataviz/mingoco.md)
-- [Decision Trees](mooc/decisiontress.md)
+- [Decision Trees](mooc/decisiontrees.md)
 
 ### Comparative Analysis
 - [Comparison: ArcGIS Pro versus ArcGIS Insights](comparison/ProvsInsights.md)
